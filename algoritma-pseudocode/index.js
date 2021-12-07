@@ -55,115 +55,148 @@
 // var luas = pi * r * r
 // console.log(Math.round(luas));
 
-/** STUDY CASE 3
- * 
- * Buat rumus luas permukaan Balok
- * 
- * Algoritmna
- * 1. Cari definisi luas permukaan balok = 6
- * 
- */
+// /** STUDY CASE 3
+//  * 
+//  * Buat rumus luas permukaan Balok
+//  * 
+//  * Algoritmna
+//  * 1. Cari definisi luas permukaan balok = 6
+//  * 
+//  */
 
-/** Selasa, 7 Des 2021 */
-/** CASE BELI MINUMAN HEHEHHEE */
-// var minuman = "kopi";
-// var nama = "Fitri";
+// /** Selasa, 7 Des 2021 */
+// /** CASE BELI MINUMAN HEHEHHEE */
+// // var minuman = "kopi";
+// // var nama = "Fitri";
 
-// switch (minuman) {
-//     case "kopi":
-//         result = nama + ", kamu pilih " + minuman;
+// // switch (minuman) {
+// //     case "kopi":
+// //         result = nama + ", kamu pilih " + minuman;
+// //         break;
+// //     case "teh":
+// //         result = nama + ", kamu pilih " + minuman;
+// //         break;
+// // }
+// // console.log(result);
+
+// /** CASE GANJIL OR GENAP YACH
+//  */
+// // var angka = 5
+// // if( angka % 2===0){console.log (angka + " adalah Genap")}
+// // else if (angka %2===1){console.log(angka + " adalah Ganjil")
+// // } 
+
+// // /** BERATTT BADANN MU APAka suda IDEAAALLL?!
+// // */
+// // var berat = 40
+// // if (berat >100){
+// //     console.log ("obesitas!!!")
+// // }else if (berat<= 100 && berat>80){
+// //     console.log ("gendatsss")
+// // }else if (berat<= 80 && berat >65){
+// //     console.log("yaa lumayan lhaa ideal")
+// // }else if (berat<= 65 && berat > 50){
+// //     console.log("kuruzzz")
+// // }else if (berat <= 50 && berat > 30){
+// //     console.log ("kuruzzz abiezz!!")
+// // }else{
+// //     (console.log("masukin data yang bener dwong bambank")
+// // }
+
+//  /** BELI BUKU DI TOKO BUKUU EAAA */
+// //  var buku = "Cara mencintaimu";
+// //  var total = 50000;
+// //  var nama = "ALAYERS";
+// //  var totalBayar;
+
+// //  switch (buku.toLowerCase()) {
+// //      case "coding":
+// //          if (total => 50000){
+// //              totalBayar = total - (total * 0.1)
+// //          } else {
+// //              totalBayar = total - (total * 0.05)
+// //          }
+// //          console.log(nama + ", membayar Rp. " + totalBayar);
+// //     break;
+// //     case "cooking":
+// //         if (total => 50000){
+// //             totalBayar = total - (total * 0,05)
+// //         } else {
+// //             totalBayar = total - (total * 0.025)
+// //         }  
+// //         console.log(nama + ", membayar Rp. " + totalBayar);
+// //     break;
+// //     default:
+// //         console.log("Masukkan data yang benar dwooongss please pake banget")
+// //  }
+
+// var access = "public";
+// var level = 3;
+
+// switch (access) {
+//     case "":
+//         console.log ("Input Access");
 //         break;
-//     case "teh":
-//         result = nama + ", kamu pilih " + minuman;
+//     case "public":
+//         if (level < 5) {
+//            console.log (access + " di bawah 5")
+//         } else if (level > 5){
+//             console.log (access + " di atas 5")
+//         } else if (level == 5){
+//             console.log (access + " Five")
+//         };
 //         break;
-// }
-// console.log(result);
-
-/** CASE GANJIL OR GENAP YACH
- */
-// var angka = 5
-// if( angka % 2===0){console.log (angka + " adalah Genap")}
-// else if (angka %2===1){console.log(angka + " adalah Ganjil")
-// } 
-
-// /** BERATTT BADANN MU APAka suda IDEAAALLL?!
-// */
-// var berat = 40
-// if (berat >100){
-//     console.log ("obesitas!!!")
-// }else if (berat<= 100 && berat>80){
-//     console.log ("gendatsss")
-// }else if (berat<= 80 && berat >65){
-//     console.log("yaa lumayan lhaa ideal")
-// }else if (berat<= 65 && berat > 50){
-//     console.log("kuruzzz")
-// }else if (berat <= 50 && berat > 30){
-//     console.log ("kuruzzz abiezz!!")
-// }else{
-//     (console.log("masukin data yang bener dwong bambank")
-// }
-
- /** BELI BUKU DI TOKO BUKUU EAAA */
-//  var buku = "Cara mencintaimu";
-//  var total = 50000;
-//  var nama = "ALAYERS";
-//  var totalBayar;
-
-//  switch (buku.toLowerCase()) {
-//      case "coding":
-//          if (total => 50000){
-//              totalBayar = total - (total * 0.1)
-//          } else {
-//              totalBayar = total - (total * 0.05)
-//          }
-//          console.log(nama + ", membayar Rp. " + totalBayar);
-//     break;
-//     case "cooking":
-//         if (total => 50000){
-//             totalBayar = total - (total * 0,05)
-//         } else {
-//             totalBayar = total - (total * 0.025)
-//         }  
-//         console.log(nama + ", membayar Rp. " + totalBayar);
-//     break;
+// case "private":
+//         if (level < 5) {
+//            console.log (access + " di bawah 5")
+//         } else if (level > 5){
+//             console.log (access + " di atas 5")
+//         } else if (level == 5){
+//             console.log (access + " Five")
+//         };
+//         break;
+//     case "protected":
+//         if (level < 5) {
+//            console.log (access + " di bawah 5")
+//         } else if (level > 5){
+//             console.log (access + " di atas 5")
+//         } else if (level == 5){
+//             console.log (access + " Five")
+//         };
+//         break;
 //     default:
-//         console.log("Masukkan data yang benar dwooongss please pake banget")
-//  }
+//         console.log ("Access is not defined")
+// }  
 
-var access = "public"
-var level = 3
+/** PENGULANGAN ATAU LOOP */
+// var str = "sayur asem"
+// for(var i = 0; i < 10; i++){
+//     console.log(str[i])
+// }
 
-switch (access) {
-    case "":
-        console.log ("Input Access");
-        break;
-    case "public":
-        if (level < 5) {
-           console.log (access + " di bawah 5")
-        } else if (level > 5){
-            console.log (access + " di atas 5")
-        } else if (level == 5){
-            console.log (access + " Five")
-        };
-        break;
-case "private":
-        if (level < 5) {
-           console.log (access + " di bawah 5")
-        } else if (level > 5){
-            console.log (access + " di atas 5")
-        } else if (level == 5){
-            console.log (access + " Five")
-        };
-        break;
-    case "protected":
-        if (level < 5) {
-           console.log (access + " di bawah 5")
-        } else if (level > 5){
-            console.log (access + " di atas 5")
-        } else if (level == 5){
-            console.log (access + " Five")
-        };
-        break;
-    default:
-        console.log ("Access is not defined")
-}
+// var str = "sayur lodeh"
+// for (var i = 0; i < str.length; i++){
+//     if(i % 2 === 0){
+//         console.log(str[i].toUpperCase())
+//     }else{
+//         console.log(str[i])
+//     }
+//     }
+
+ var n = 5
+ 
+ if (n % 2 === 1){
+     //console.log("Ganjil")
+     var temp = "";
+
+     for (var i = 0; i <n; i++){
+         if (i % 2 === 0){
+             temp += "#"
+         }else {
+             temp += "@"
+         }
+     }console.log (temp);
+
+ } else {
+     console.log("Angka harus ganjil")
+ }

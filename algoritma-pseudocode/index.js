@@ -337,3 +337,185 @@
 //     console.log(temp)
 //     temp = ''
 // }
+
+/** ARRAY
+ * harus plural
+//  * 
+//  */
+// var numbers = [100, 50, 75];
+// //console.log(numbers);
+// //built in function;
+// console.log(numbers.length)
+
+/** STUDY CASE 1 - ARRAY
+ * Buatlah nilai rata-rata dari sebuah array
+ * contoh:
+ * var data:[1.5, 0.75, 2.25, 1.75, 1]
+ * result: 
+ * total 7.5
+ * mean = 1.45
+ * 
+ */
+//  var data= [1.5, 0.75, 2.25, 1.75, 1]
+//  var total = 0
+
+//  for (var i= 0;i< data.length; i++){
+//      total += data[i]
+//  }
+//  var mean = total/data.length
+//  console.log("Mean :", + mean)
+
+/** STUDI KASUS
+ * Mengelompokkan data yang lebih dari 1
+ */
+
+// var data = [1.5, 0.75, 0.25, 2.25, 1.75, 1]
+// var arrResult = [];
+
+// for (var i= 0; i < data.length; i++){
+//     if (data[i] > 1){
+//         arrResult.push(data[i])
+//     }
+// } console.log(arrResult)
+
+/** STUDI KASUS 3
+ * Pecah kalimat berikut menjadi beberapa kata
+ * Contoh:
+ * var pantun = "makan nasi bayarnya pake paku"
+ * 
+ * Result:
+ * ["makan", "nasi", "bayarnya", "pake", "paku"]
+ */
+//  var pantun = "makan nasi bayarnya pake paku"
+//  var temp = ""
+//  var arrResult = []
+ 
+
+//  for(var i= 0; i < pantun.length; i++){
+//      if( pantun[i] === ' '){
+//          arrResult.push(temp);
+//          temp = ""
+//         }else {
+//             temp += pantun[i];
+//      }
+//      if(i === pantun.length - 1){
+//          arrResult.push(temp);
+//          temp = ""
+//      }
+//     } 
+//     console.log(arrResult)
+
+/** STUDY CASE
+ * Cari pasangan terbesar dari string berikut:
+ * Contoh:
+ * var input = "5279312"
+ * ["52", "27", dll]
+ * 
+ * Result :
+ * 93
+ */
+// var input = "5279312";
+// var tempNum = '';
+// var result = [];
+
+// for(var i=0; i<input.length - 1; i++){
+//     tempNum = input[i] + input [i+1]
+//    // console.log(input[i])
+//    result.push(Number(tempNum));
+//    tempNum = ''
+// }
+// var currentScore = result[0]
+// for (var i = 0; i < result.length; i++){
+//     if(currentScore < result[i]){
+//         currentScore = result[i]
+//     }
+// }console.log(currentScore)
+
+// var input = "123456789";
+
+// function numberToArray(input){
+//     var tempNum = '';
+//     var result = []
+//         for (var i=0; i < input.length - 1; i++){
+//             tempNum = input[i] + input [i+1]
+//             //console.log(input[i]);
+//             result.push(Number(tempNum));
+//             tempNum = ''
+//         }
+//         return result
+// }
+// function findMaxScore(input){
+//     var result = numberToArray(input)
+
+//     var currentScore = result[0]
+//     for (var i=0; i<result.length; i++){
+//         if (currentScore < result[i]) {
+//             currentScore = result[i]
+//         }
+//     } console.log(currentScore)
+// }
+// findMaxScore(input)
+
+/** STUDY CASE
+ * 
+ * Buatlah sebuah kalkulator yang memiliki sebuah fungsi
+ * -jumlah (a,b) => untuk menjumlahkan dua angka
+ * -kurang (a,b) => untuk mengurangkan dua angka
+ * -kali (a,b) => untuk mengalikan dua angka
+ * -bagi (a,b) => untuk membagikan dua angka
+ * 
+ * fungsi utama calculator
+ * calculator(a,opr,b) => sbg fungsi utama atau
+ * dimana mengandung ke-4 function diatas
+ * 
+ * contoh:
+ * calculator(5,'+',3) // 8
+ * calculator(5,'-',3) // 2
+ * calculator(5,'*',3) // 15
+ * calculator(5,'/',3) // 1.66
+ * 
+ * calculator (5,'#',3) // Masukkan operator yang benar
+ *  */
+
+var a = 2
+var b = 3
+var opr = '#'
+
+function jumlah(a,b){
+    return a + b;
+}
+function kurang(a,b){
+    return a - b;
+}
+function kali(a,b){
+    return a * b;
+}
+function bagi(a,b){
+    return a / b;
+}
+
+function calculator(a, opr ,b ) {
+switch (opr){
+    case '+':
+        var tambah = jumlah(a,b)
+        console.log(tambah)
+        break;
+    case '-':
+        var kurang = kurang(a,b)
+        console.log(kurang)
+        break;  
+    case '*':
+        var kali = kali(a,b)
+        console.log(kali)
+        break;    
+    case '/':
+        var bagi = bagi(a,b)
+        console.log(bagi)
+        break;  
+    default:
+        console.log("masukkan operator yang benar")
+
+}
+}
+
+calculator (5, '+', 3)

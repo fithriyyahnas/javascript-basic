@@ -183,20 +183,157 @@
 //     }
 //     }
 
- var n = 5
+//  var n = 5
  
- if (n % 2 === 1){
-     //console.log("Ganjil")
-     var temp = "";
+//  if (n % 2 === 1){
+//      //console.log("Ganjil")
+//      var temp = "";
 
-     for (var i = 0; i <n; i++){
-         if (i % 2 === 0){
-             temp += "#"
-         }else {
-             temp += "@"
-         }
-     }console.log (temp);
+//      for (var i = 0; i <n; i++){
+//          if (i % 2 === 0){
+//              temp += "#"
+//          }else {
+//              temp += "@"
+//          }
+//      }console.log (temp);
 
- } else {
-     console.log("Angka harus ganjil")
- }
+//  } else {
+//      console.log("Angka harus ganjil")
+//  }
+
+/** RABU, 8 DESEMBER 2021
+ * Belajar ttg FLAG
+ * untuk cari kesalahan dari suatu string
+ */
+
+// var flag = false;
+// var str = "abcdxfgh"
+
+// for (var i=0; i <str.length; i++)
+// // {console.log(str[i])}
+// if (str[i] === 'x'){
+//     flag = true;
+// }
+// if (flag === true){
+//     console.log("Huruf x ditemukan")
+// }else {console.log("Huruf x tidak ditemukan")}
+
+/** STUDY CASE 
+ * CEK JUMLAH HURUF X DALAM SEBUAH STRING
+ * Contoh:
+ * var kata = "xaxbxcz"
+ * Result:
+ * Jumlah 'x'= 3
+ */
+
+// var kata = "xaxbxcz";
+// var flagX = 0;
+
+// for (var i= 0;  i< kata.length; i++){
+//     if(kata[i] === 'x'){
+//         flagX++
+//     }
+// }
+// if (flagX === 0){
+//     console.log("Huruf x tidak ditemukan")
+// }else {
+//     console.log("Jumlah 'x' = " + flagX + ".")
+// }
+
+// ** STUDY CASE 7
+//  * Cek apakah jumlah 'x' dan 'o' sama banyaknya
+//  * 
+//  * Contoh:
+//  * var XO = "xoxoxoxoxoxoxo"
+//  * Result:
+//  * Jumlah 'x' dan 'o' sama
+//  * 
+//  * var XO = "xox"
+//  * Result:
+//  * Jumlah 'x' = 2
+//  * Jumlah 'o' = 1//
+//  * /
+ 
+// var XO = 'xoxxoxo';
+// var countX = 0
+// var countO = 0
+
+// for (var i = 0; i< XO.length; i++){
+//     if (XO[i] === 'x'){
+//         countX++;
+//     }else if(XO[i] === 'o'){
+//     countO++;
+//     }
+// }
+// //console.log(countX, countO)
+
+// if (countX === countO) {
+//     console.log("Jumlah 'x' dan 'o' sama.")}
+// else{ 
+//     console.log("Jumlah 'x' =" + countX)
+//     console.log("Jumlah 'o' =" + countO)}
+
+/** Study Case 8
+ * Contoh:
+ * N = 3
+ * Result:
+ * #####
+ * #####
+ * #####
+ */
+
+// var n = 3;
+// var temp = ''
+// for (var i = 0; i< n;i++){
+//     for (var j = 0; j < n ;j++){
+//         //console.log('#')
+//         temp += '%'
+//     }
+//     console.log(temp);
+//     temp = '';
+// }
+/**
+ * STUDI CASE 9
+ * Buat kotak sperti berikut
+ * contoh
+ * n=5
+ * result 
+ * ##### -- genap hashtag
+ * @@@@@
+ * #####
+ * @@@@@
+ * #####
+ */
+// var n = 5;
+// var temp = ""
+
+// for (var i=0; i < n; i++){
+//     if (i % 2 === 0){
+//         for(var j=0; j<n;j++){
+//             temp += "#"
+//         }
+//     }else {
+//         for(var j=0; j<n;j++){
+//             temp += "@"
+//         }}
+//     console.log(temp);
+//     temp = ""
+// }
+/** STUDI CASE 10
+ * n = 5
+ * Result:
+ * #
+ * ##
+ * ###
+ * ####
+ * #####
+ */
+// var n = 5
+// var temp = ''
+// for (var i=0; i< n; i++){
+//     for (var j=0; j<=i ; j++){
+//         temp += j + 1
+//     }
+//     console.log(temp)
+//     temp = ''
+// }

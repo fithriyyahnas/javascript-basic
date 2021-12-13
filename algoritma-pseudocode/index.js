@@ -477,45 +477,46 @@
  * calculator (5,'#',3) // Masukkan operator yang benar
  *  */
 
-var a = 2
-var b = 3
-var opr = '#'
+// var a = 2
+// var b = 3
+// var opr = '#'
 
-function jumlah(a,b){
-    return a + b;
-}
-function kurang(a,b){
-    return a - b;
-}
-function kali(a,b){
-    return a * b;
-}
-function bagi(a,b){
-    return a / b;
-}
+// function jumlah(a,b){
+//     return a + b;
+// }
+// function kurang(a,b){
+//     return a - b;
+// }
+// function kali(a,b){
+//     return a * b;
+// }
+// function bagi(a,b){
+//     return a / b;
+// }
 
-function calculator(a, opr ,b ) {
-switch (opr){
-    case '+':
-        var tambah = jumlah(a,b)
-        console.log(tambah)
-        break;
-    case '-':
-        var kurang = kurang(a,b)
-        console.log(kurang)
-        break;  
-    case '*':
-        var kali = kali(a,b)
-        console.log(kali)
-        break;    
-    case '/':
-        var bagi = bagi(a,b)
-        console.log(bagi)
-        break;  
-    default:
-        console.log("masukkan operator yang benar")
+// function calculator(a, opr ,b ) {
+// switch (opr){
+//     case '+':
+//         var tambah = jumlah(a,b)
+//         console.log(tambah)
+//         break;
+//     case '-':
+//         var kurang = kurang(a,b)
+//         console.log(kurang)
+//         break;  
+//     case '*':
+//         var kali = kali(a,b)
+//         console.log(kali)
+//         break;    
+//     case '/':
+//         var bagi = bagi(a,b)
+//         console.log(bagi)
+//         break;  
+//     default:
+//         console.log("masukkan operator yang benar")
 
-}
-}
+// }
+// }
 
-calculator (5, '+', 3)
+// calculator (5, '+', 3)
+

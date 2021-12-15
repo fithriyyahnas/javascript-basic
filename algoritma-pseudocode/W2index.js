@@ -319,7 +319,7 @@
 //         if(numbers[i] > 0)
 
 //     console.log(numbers[i]*10)
-//     } 
+//     }
 // }
 // processNumber(numbers)
 
@@ -348,7 +348,7 @@
 //         console.log("Stop Engine!")
 //         this.engine = false;
 //     },
-//     identifySelf: function(){ 
+//     identifySelf: function(){
 //         console.log(` ${this.name}, type: ${this.type}, cc: ${this.cc}`)
 //     },
 //     showTags: function(){
@@ -368,19 +368,89 @@
 
 //CASE STUDY - 1
 
- class Todo{
-     constructor( id, task, status){
-         this.id = id;
-         this.task = task;
-         this.status = status
-     }
- }
+//  class Todo{
+//      constructor( id, task, status){
+//          this.id = id;
+//          this.task = task;
+//          this.status = status
+//      }
+//  }
 
- class TaskBoard {
-     constructor(boards){
-         this.boards = boards || [];
-     }
- }
-  
- let Todo = new (1, "Belajar Koding", "j");
- console.log(Todo);
+//  class TaskBoard {
+//      constructor(boards){
+//          this.boards = boards || [];
+//      }
+//  }
+
+//  let Todo = new (1, "Belajar Koding", "j");
+//  console.log(Todo);
+
+//Pillar utama OOP
+
+// 1. Inheritance (keturunan)
+// Parent Class
+class Vehicle {
+  constructor(name, type, cc) {
+    this.name = name;
+    this.type = type;
+    this.cc = cc;
+  }
+}
+//Child Class
+class Sedan extends Vehicle {
+  constructor(name, type, cc, nitro) {
+    super(name, type, cc);
+    this.nitro = nitro;
+  }
+}
+
+class Pickup extends Vehicle {
+  constructor(name, type, cc, box) {
+    super(name, type, cc);
+    this.box = box;
+  }
+}
+class SUV extends Vehicle {
+  constructor(name, type, cc, wheel) {
+    super(name, type, cc);
+    this.wheel = wheel;
+  }
+}
+
+const civic = new Sedan("Civic 2021", "sedan", 1500, true);
+const colt = new Pickup("Colt Pickup", "pickup", 2500, 1);
+const tiguan = new SUV("Tiguan", "SUV", 5000, "4wd");
+
+// console.log(civic)
+// console.log (colt)
+// console.log(tiguan)
+
+//FACTORY CLASS
+//hanya fokus ke dalam method
+
+class Showroom {
+  constructor(rooms) {
+    this.rooms = rooms;
+  }
+  showVehicles() {
+    console.log("Showroom vehicles :")
+    this.rooms.forEach((room, i) => {
+        let {name, type, cc} = room;
+        console.log (`${i+1}. ${name}, type: ${type}, cc: ${cc}`)
+    })
+  }
+  addVehicle(vehicle) {
+    this.rooms.push(vehicle);
+  }
+    }
+
+const showroom = new Showroom([]);
+// console.log(showroom)
+showroom.addVehicle(civic);
+showroom.addVehicle(colt);
+showroom.addVehicle(tiguan);
+showroom.showVehicles();
+
+// 2. Polymorphism
+// 3. Encapsulation
+// 4. Abstraction

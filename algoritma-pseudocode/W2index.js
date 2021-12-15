@@ -458,16 +458,86 @@ switch (type) {
   }
     }
 
-const showroom = new Showroom([]);
-// console.log(showroom)
-showroom.addVehicle("Suzuki Karimun", "sedan", 1500, false);
-// showroom.addVehicle(colt);
-// showroom.addVehicle(tiguan);
-showroom.addVehicle("colt pickup", "pickup", 2000, 1)
-// showroom.deleteVehicle ("Colt Pickup")
-showroom.showVehicles();
+// const showroom = new Showroom([]);
+// // console.log(showroom)
+// showroom.addVehicle("Suzuki Karimun", "sedan", 1500, false);
+// // showroom.addVehicle(colt);
+// // showroom.addVehicle(tiguan);
+// showroom.addVehicle("colt pickup", "pickup", 2000, 1)
+// // showroom.deleteVehicle ("Colt Pickup")
+// showroom.showVehicles();
 // console.log(showroom.rooms)
 
 // 2. Polymorphism
 // 3. Encapsulation
 // 4. Abstraction
+
+// case study 
+
+class Todo {
+    constructor (id, task, status){
+        this.id = id;
+        this.task = task;
+        this.status = status
+    }
+}
+
+class Taskboard {
+    constructor(boards) {
+        this.boards = boards || [];
+    }
+    showTodos(){
+        console.log ("Todo list: ")
+        this.boards.forEach(board => {
+            let {id, task, status} = board
+            // !status artinya status ===false
+            if(!status){
+                console.log(`${id}. [ ] ${task}.`)
+            } else {
+                console.log(`${id}. [x] ${task}.`)
+            }
+        })
+    }
+    addTodo(task,status){
+        let id;
+        if (this.boards.length === 0){
+            id = 1;
+        } else {
+            id = this.boards[this.boards.length - 1].id + 1;
+        }
+        this.boards.push(new Todo(id, task, status))
+        console.log(`Task '${task}' created.`)
+    }
+    deleteTodo (id){
+        this.boards = this.boards.filter(
+            board => board.id !== id
+        )
+        console.log(`Id ${id} has been deleted.`)
+    }
+    updateTodo(id, task){
+      this.boards = this.boards.map(board =>{
+        if(board.id === id){
+          board.task = task
+        }
+        return board
+      })
+      console.log(`Id ${id} has been updated.`)
+    }
+    changeStatus(id){
+      this.boards = this.boards.map(board =>{
+        if(board.id === id){
+          this.status = true
+        }
+        return board
+      })
+    }
+}
+
+const taskboard = new Taskboard()
+taskboard.addTodo("Explore OOP", true)
+taskboard.addTodo("Explore MVC", false)
+taskboard.addTodo("Kerjain tugas", false)
+taskboard.deleteTodo(2)
+taskboard.updateTodo(1, "Belajar JS")
+taskboard.changeStatus(3)
+taskboard.showTodos()
